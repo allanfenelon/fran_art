@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: fruits;
+    src: url("../fonts/Fruit_Days.otf");
+}
+@font-face {
+    font-family: gobold;
+    src: url("../fonts/Gobold_Bold.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #282B22;
+    font-family: fruits;
+    text-align: center; 
+}
+nav > a:not(.name){
+    color: aliceblue;
+    text-decoration: none;
+    position: right;
+    font-weight:bolder;
+    margin-top: 30px;
+    margin-right: 25px;
+
+    
+}
+
+.name{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight:bolder;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 23px;
+    font-size: 25px;
+}
+
+
+
+.eu-img > img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid #266aa6;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px black;
+    position: auto;
+    object-fit: cover;
+    object-position: 0px 1px
+}
+
+.perfil{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-image: url("../images/bg/fundo.jpg");
+    color: aliceblue;
+    font-family: gobold;
+    text-align: center;
+}
+
+.perfil > div{
+    margin-top: 10px;
+    background-color: #266AA6;
+    border-radius: 20px 5px 20px 5px;
+    box-shadow: 3px 3px 3px black;
+    width: 200px;
+    height: 100px;
+}
+
+.perfil > div > p{
+    margin-top: 8px;
+    padding: 0;
+    color:rgb(248, 245, 245);
+}
+.p-name{
+    font-size: 20px;
+    font-weight:bolder;
+    font-style: bold;
+}
+
+.info{
+    font-size: 13px;
+    font-weight: 900;
+}
+
+
+
+footer{
+    background-color: #282B22;
+    color: aliceblue;
+    text-align: center;
+    font-family: gobold;
+    font-size: 10px;
+}
+.artes{
+    margin: 0;
+    height: auto;
+    background: linear-gradient(-45deg, #215BA6, #52B3D9, #F2DF80, #F2A516);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.artes > div> h1{
+    text-align: center;
+    font-family: fruits;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.artes > div >figure{
+    border: thin #266AA6 solid;
+    border-radius: 16px;
+    box-shadow: 3px 3px 3px black;
+    display: flex;
+    flex-flow: column;
+    padding: 0px;
+    max-width: 220px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.artes > div > figure > figcaption{
+    background-color: #266AA6;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    border-radius: 0px 0px 16px 16px;
+    text-align: center;
+}
+
+.artes > div > figure > img{
+    border-radius: 16px 16px 0px 0px;
+    max-width: 250px;
+    max-height: 150px;
+    position: auto;
+    object-fit: cover;
+    object-position: 0px 1px
+}
+.conteudo{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .conteudo {
+      flex-direction: column;
+    }
+  }
